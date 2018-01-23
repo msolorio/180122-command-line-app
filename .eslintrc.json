@@ -1,7 +1,7 @@
 {
     "env": {
-        "es6": true,
-        "node": true
+        "node": true,
+        "es6": true
     },
     "extends": "eslint:recommended",
     "parserOptions": {
@@ -15,9 +15,11 @@
         "react"
     ],
     "rules": {
+        "no-console": 0,
         "indent": [
             "error",
-            4
+            2,
+            {"SwitchCase": 1}
         ],
         "linebreak-style": [
             "error",
